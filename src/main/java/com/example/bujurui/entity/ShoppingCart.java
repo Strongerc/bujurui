@@ -2,6 +2,7 @@ package com.example.bujurui.entity;
 
 import lombok.Data;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
@@ -12,7 +13,9 @@ import java.time.LocalDateTime;
  * @date 2023/4/30 20:02
  */
 @Data
-public class ShoppingCart {
+public class ShoppingCart implements Serializable {
+
+    private static final long serialVersionUID = 1L;
     private Long id;
 
     //名称

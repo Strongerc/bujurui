@@ -4,6 +4,7 @@ import com.baomidou.mybatisplus.annotation.FieldFill;
 import com.baomidou.mybatisplus.annotation.TableField;
 import lombok.Data;
 
+import java.io.Serializable;
 import java.time.LocalDateTime;
 
 /**
@@ -13,7 +14,9 @@ import java.time.LocalDateTime;
  * @date 2023/4/30 19:26
  */
 @Data
-public class AddressBook {
+public class AddressBook implements Serializable {
+
+    private static final long serialVersionUID = 1L;
 
     private Long id;
 
